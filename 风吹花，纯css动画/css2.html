@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+.animation{
+		width: 280px;
+		height: 370px;
+		background-image: url(css3.png);
+		background-repeat:no-repeat;
+		-webkit-animation:wave 5s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:cubic-bezier(0.7,0.1,0.3,0.9);
+		-webkit-transform-origin:bottom;
+		animation-direction:alternate;
+        -webkit-animation-direction:alternate;
+	}
+	
+	@keyframes wave{
+		0%{
+			background-position: 0 0;
+			-webkit-transform:skew(0deg);
+		}
+		/*50%{
+			-webkit-transform:skew(-4deg);
+		}*/
+		100%{
+			-webkit-transform:skew(-4deg);
+		}
+	}
+	@-webkit-keyframes wave 
+	{
+		0%{
+				background-position: 0 0;
+				-webkit-transform:skew(0deg);
+			}
+		/*50%{
+			-webkit-transform:skew(-4deg);
+		}*/
+		100%{
+			    -webkit-transform:skew(-4deg);
+		}
+	}
+
+	.animation1{
+		width: 160px;
+		height: 120px;
+		position: relative;
+		top: -100px;
+		left: 50px;
+		background: url(css4.png) no-repeat;
+		-webkit-animation:wave1 5s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function:cubic-bezier(0,0.4,0.6,1);
+		animation-direction:alternate;
+	    -webkit-animation-direction:alternate;
+	}
+
+	@keyframes wave1{
+		0%{
+			background-position: 0 0;
+			-webkit-transform:skew(0deg);
+		}
+		/*50%{
+				-webkit-transform:skew(-10deg);
+			}*/
+		100%{
+			    -webkit-transform:skew(-10deg);
+		}
+	}
+	@-webkit-keyframes wave1{
+		0%{
+				background-position: 0 0;
+				-webkit-transform:skew(0deg);
+			}
+		/*50%{
+				-webkit-transform:skew(-10deg);
+			}*/
+		100%{
+			    -webkit-transform:skew(-10deg);
+		}
+	}
+
+	.animation2{
+		width: 240px;
+		height: 190px;
+		position: relative;
+		top: -315px;
+		left: 190px;
+		background: url(css5.png) no-repeat;
+		-webkit-animation:wave2 5s infinite;
+		-webkit-animation-timing-function:cubic-bezier(0.3,0,1,0.7);
+		-webkit-transform-origin:bottom;
+		animation-direction:alternate;
+	    -webkit-animation-direction:alternate;
+	}
+
+	@keyframes wave2{
+		0%{
+			background-position: 0 0;
+			-webkit-transform:skew(0deg);
+		}
+		/*50%{
+				-webkit-transform:skew(-7deg);
+			}*/
+		100%{
+			    -webkit-transform:skew(-7deg);
+		}
+	}
+	@-webkit-keyframes wave2{
+		0%{
+				background-position: 0 0;
+				-webkit-transform:skew(0deg);
+			}
+		/*50%{
+				-webkit-transform:skew(-7deg);
+			}*/
+		100%{
+			    -webkit-transform:skew(-7deg);
+		}
+	}
+</style>
+<body>
+<div>
+	<div class="animation"></div>
+	<div class="animation1"></div>
+	<div class="animation2"></div>
+</div>
+</body>
+</html>
